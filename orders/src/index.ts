@@ -8,6 +8,7 @@ import { natsWrapper } from "./nats-wrapper";
 
 // DB CONNECTION & SERVER START
 (async () => {
+  console.log("Starting Orders service!");
   if (!process.env.JWT_KEY) {
     // value of process.env.JWT_KEY is manually
     // defined using the terminal command:
